@@ -27,7 +27,7 @@ module "eks" {
     ami_type               = "AL2_x86_64"
     instance_types         = ["t3.medium"]
     vpc_security_group_ids = [aws_security_group.all_worker_mgmt.id]
-#    attach_cluster_primary_security_group = true
+
   }
 
   eks_managed_node_groups = {
